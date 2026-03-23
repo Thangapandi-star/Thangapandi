@@ -13,28 +13,14 @@ body {
     color: #111827;
 }
 
-/* GLASS EFFECT */
-.glass {
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(0,0,0,0.05);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
-
-/* HEADER */
-header {
-    text-align: center;
-    padding: 30px 10px;
-    margin: 15px;
-}
-
 /* NAVBAR */
 nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background: #dbeafe;
+    padding: 10px;
+    border-radius: 10px;
     margin: 10px;
 }
 
@@ -49,9 +35,38 @@ nav a:hover {
     color: #2563eb;
 }
 
+/* GLASS EFFECT */
+.glass {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px 10px;
+    margin: 15px;
+    background: #dbeafe;
+    border-radius: 15px;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+    border: 3px solid black;
+}
+
 /* CONTAINER */
 .container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: auto;
     padding: 15px;
 }
@@ -63,7 +78,6 @@ nav a:hover {
     transition: 0.3s;
 }
 
-/* HOVER EFFECT */
 .section:hover {
     transform: translateY(-5px);
 }
@@ -73,6 +87,16 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+}
+
+/* LINKS */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* MOBILE */
@@ -85,70 +109,119 @@ nav a:hover {
         font-size: 22px;
     }
 }
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 15px;
-    margin: 20px;
-}
 </style>
 </head>
 
 <body>
 
-<header class="glass">
+<header>
+    <img src="new-photo.jpg" alt="Profile Photo" class="profile-img">
     <h1>THANGAPANDI V</h1>
-    <p>M.Sc Mathematics | NIT Tiruchirappalli</p>
+    <p>
+        M.Sc Mathematics | 
+        <a href="https://www.nitt.edu/" target="_blank">
+        National Institute of Technology Tiruchirappalli
+        </a>
+    </p>
 </header>
 
-<nav class="glass">
-    <a href="#about">About</a>
+<nav>
     <a href="#education">Education</a>
     <a href="#projects">Projects</a>
+    <a href="#exams">Exams</a>
     <a href="#achievements">Achievements</a>
+    <a href="#conferences">Workshops</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
 
-<div class="section glass" id="about">
-<h2>About Me</h2>
-<p>
-An enthusiastic Master’s student in Mathematics with strong research interests in Complex Analysis, Topology, and Functional Analysis.
-Currently working on univalent functions and geometric function theory.
-</p>
-</div>
-
+<!-- ROW 1 -->
 <div class="grid">
 
+<!-- B11 -->
 <div class="section glass" id="education">
 <h2>Education</h2>
 <ul>
-<li><b>M.Sc Mathematics</b>, NIT Tiruchirappalli (2024–2026)<br>CGPA: 9.46/10</li>
-<li><b>B.Sc Mathematics</b>, Ayya Nadar Janaki Ammal College (2021–2024)<br>CGPA: 8.73</li>
+<li>
+<b>M.Sc Mathematics</b>, 
+<a href="https://www.nitt.edu/" target="_blank">
+National Institute of Technology Tiruchirappalli
+</a> 
+(2024–2026)<br>
+CGPA:<b> 9.46 </b>out of 10
+</li>
+
+<li>
+<b>B.Sc Mathematics</b>, 
+<a href="https://anjac.edu.in/" target="_blank">
+Ayya Nadar Janaki Ammal College
+</a> 
+(2021–2024)<br>
+CGPA: <b>8.73</b> out of 10
+</li>
 </ul>
 </div>
 
-<div class="section glass" id="achievements">
-<h2>Achievements</h2>
-<ul>
-<li>15+ National Level Mathematical Quiz Wins</li>
-<li>JAM 2024 AIR: 631</li>
-<li>CUET-PG Score: 177/300</li>
-<li>Class Representative</li>
-</ul>
-</div>
-
-</div>
-
+<!-- B12 -->
 <div class="section glass" id="projects">
 <h2>Projects</h2>
 <ul>
-<li>Univalent Functions (2025–2026)</li>
-<li>Lie Algebra in Computer Vision</li>
-<li>External Direct Product & Dihedral Groups</li>
+<li>
+<b>Univalent Functions (2025–2026)</b><br>
+Under <a href="https://sites.google.com/site/vravi68/" target="_blank">Prof. V. Ravichandran</a>, 
+<a href="https://www.nitt.edu/" target="_blank">NIT Tiruchirappalli</a>
+</li>
+
+<li>
+<b>Application of Lie Algebra in Computer Vision (2025)</b><br>
+Under <a href="https://www.iist.ac.in/people-faculty-profile/deepak-mishra" target="_blank">Prof. Deepak Mishra</a>, 
+<a href="https://www.iist.ac.in/" target="_blank">IIST Thiruvananthapuram</a>
+</li>
+
+<li>
+<b>External Direct Product & Dihedral Groups (2023–2024)</b><br>
+Under <a href="https://www.researchgate.net/profile/Paulraj-Gnanachandra" target="_blank">Dr. P. Gnanachandra</a>, 
+<a href="https://anjac.edu.in/" target="_blank">Ayya Nadar Janaki Ammal College</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ROW 2 -->
+<div class="grid">
+
+<!-- B21 -->
+<div class="section glass" id="exams">
+<h2>Examinations Qualified</h2>
+<ul>
+<li> <b>GATE 2026 – AIR 79</b> (59/100)</li>
+<li>JAM 2024 – AIR 631</li>
+<li>CUET-PG 2024 – 177/300</li>
+</ul>
+</div>
+
+<!-- B22 -->
+<div class="section glass" id="achievements">
+<h2>Achievements</h2>
+<ul>
+<li>Class Representative at NIT Tiruchirappalli</li>
+<li>Event Head – Mathematical Quiz, Exponentia’26</li>
+<li>15+ National Level Mathematical Quiz Wins</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ROW 3 -->
+<div class="section glass" id="conferences">
+<h2>Conferences & Workshops</h2>
+<ul>
+<li>National Workshop on Algebra and Analysis 2024, NIT Tiruchirappalli</li>
+<li>Workshop for Undergraduates, NIT Puducherry (2023)</li>
+<li>MTTS Online Foundation Course in Mathematics (OFCM 2022)</li>
 </ul>
 </div>
 
@@ -165,19 +238,34 @@ Currently working on univalent functions and geometric function theory.
 
 <div class="section glass" id="contact">
 <h2>Contact</h2>
-<p>Email: thangapandi0070131@gmail.com</p>
-<p>Email: 216124020@nitt.edu</p>
+
+<p>Email: 
+<a href="mailto:thangapandi0070131@gmail.com">
+thangapandi0070131@gmail.com
+</a>
+</p>
+
+<p>Email: 
+<a href="mailto:216124020@nitt.edu">
+216124020@nitt.edu
+</a>
+</p>
+
 <p>Phone: +91 8825498610</p>
 <p>Location: Tamil Nadu, India</p>
-</div>
+<p>Address: 112, TCN Street, 626123, Tamil Nadu, India</p>
+
+<p><b>LinkedIn:</b> 
+<a href="https://linkedin.com/in/thangapandi-v-455152281" target="_blank">
+linkedin.com/in/thangapandi-v-455152281
+</a>
+</p>
 
 </div>
 
 </div>
 
-<footer class="glass">
-<p>© 2026 Thangapandi V</p>
-</footer>
+</div>
 
 </body>
 </html>
